@@ -38,7 +38,7 @@ namespace Generate_Image.Controllers
             using(var client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Clear();
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", "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");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", "your open api key");
                 var Message = await client.PostAsync("https://api.openai.com/v1/images/generations", new StringContent(JsonConvert.SerializeObject(obj), Encoding.UTF8, "application/json"));
                 if (Message.IsSuccessStatusCode)
                 {
