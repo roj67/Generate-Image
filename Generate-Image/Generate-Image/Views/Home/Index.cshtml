@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4">Image Generator</h1>
+<!--Image info-->
+<input type="text" class="form-control" id="txt" style="width:400px;" placeholder="Image Description" />
+<br />
+<!--Image Size-->
+<select id="size">
+    <option selected>256x256</option>
+    <option>512x512</option>
+</select>
+<!--Images Required-->
+<input type="number" value="1" placeholder="Images Required" id="quantity" />
+<!--Generate button-->
+<button id="generate">
+    Generate
+</button>
+<br />
+<!--Display image here-->
+<div id="Imagedisplay" class="col-md-14 row">
+</div>

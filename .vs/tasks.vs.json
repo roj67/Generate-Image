@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Generate-Image",
+      "appliesTo": "Generate-Image/",
+      "type": "launch"
+    }
+  ]
+}
